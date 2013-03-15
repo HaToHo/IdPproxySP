@@ -30,7 +30,11 @@
     </script>
 
     <p class="description">
-        Follow the guid at SWAMID to retrive secret and key for the social service you which to configure.
+        Follow the guid at <a href="https://portal.nordu.net/display/SWAMID/Social2SAML">>SWAMID</a> to retrive secret and key for the social service you which to configure.<br> />
+        <br/>
+        Clear key and secret for a service if you wish to remove it from the IdPproxy.<br />
+        <br />
+        If a field contains ******************** it is already configured. Leave it if you do not wish to change it.
     </p>
     <form action="${action}" method="post">
         ${setupServiceList(sociallist)}

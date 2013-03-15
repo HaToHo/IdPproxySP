@@ -11,7 +11,7 @@
 
 
     <p class="description">
-        Follow the guid at SWAMID to retrive secret and key for the social service you which to configure.
+        Click on the entity id for the service provider you wish to configure.
     </p>
     <form action="${action}" method="post">
         <p><label for="sp">Service Provider</label><br />

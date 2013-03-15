@@ -4,9 +4,9 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 8
-_modified_time = 1363336262.464262
+_modified_time = 1363355848.434099
 _enable_loop = True
-_template_filename = '/Users/haho0032/IdPproxy/src/idpsetup/files/mako/htdocs/setup.mako'
+_template_filename = '/Users/haho0032/IdPproxySP/sp/files/mako/htdocs/setup.mako'
 _template_uri = 'setup.mako'
 _source_encoding = 'utf-8'
 _exports = []
@@ -42,7 +42,7 @@ def render_body(context,**pageargs):
         # SOURCE LINE 1
         __M_writer(u'\n\n')
         # SOURCE LINE 9
-        __M_writer(u'\n\n\n\n    <p class="description">\n        Follow the guid at SWAMID to retrive secret and key for the social service you which to configure.\n    </p>\n    <form action="')
+        __M_writer(u'\n\n\n\n    <p class="description">\n        Click on the entity id for the service provider you wish to configure.\n    </p>\n    <form action="')
         # SOURCE LINE 16
         __M_writer(unicode(action))
         __M_writer(u'" method="post">\n        <p><label for="sp">Service Provider</label><br />\n        <select name=\'sp\' size=30>")\n            ')
