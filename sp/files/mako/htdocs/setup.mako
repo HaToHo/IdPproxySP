@@ -2,6 +2,12 @@
 
 <%!
   def setupEntityIdList(spList):
+      """
+      Creates option tags for a select tag.
+      The option tags contains entityID for SP's-
+      :param spList: A list of string with entityId's-
+      :return: A string with multiple option tags.
+      """
       optionList = ""
       for entityId in spList:
         optionList += "<option value='" + entityId + "'>" + entityId + "</option>"
@@ -10,6 +16,13 @@
 
 <%!
     def setupJavaScriptEntityIdArray(spList):
+      """
+      Creates a JSON list with a dictionary with the keys value and text.
+      [{'value' : 'value1','text' : 'text1'},{'value' : 'valuen','text' : 'textn'}]
+      The JSON list is created from a list of strings containing entityId's for sp's.
+      :param spList: A list of string with entityId's-
+      :return: A JSON list.
+      """
       first = True
       entityIdArray = "["
       for entityId in spList:
@@ -22,12 +35,13 @@
 %>
 
     <script language="JavaScript">
+        //Will empty all options from the select with id sp.
+        //Then fill it again with all options that have a text that matches the string str.
+        //The data array is constructed in python and represents a JSON list
+        // [{'value' : 'value1','text' : 'text1'},{'value' : 'valuen','text' : 'textn'}]
         function filterOptions(str)
         {
             var dataArr = ${setupJavaScriptEntityIdArray(splist)}
-            //alert(dataArr[0]['text']);
-            //alert('.*'+str+'.*');
-            //alert(dataArr[0]['text'].match('.*'+str+'.*'));
             $("#sp option").remove();
             $.each(dataArr,
                     function(i) {
