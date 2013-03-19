@@ -4,9 +4,9 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 8
-_modified_time = 1363343024.625034
+_modified_time = 1363356403.044068
 _enable_loop = True
-_template_filename = '/Users/haho0032/IdPproxy/src/idpsetup/files/mako/htdocs/setupservice.mako'
+_template_filename = '/Users/haho0032/IdPproxySP/sp/files/mako/htdocs/setupservice.mako'
 _template_uri = 'setupservice.mako'
 _source_encoding = 'utf-8'
 _exports = []
@@ -53,17 +53,17 @@ def render_body(context,**pageargs):
         # SOURCE LINE 1
         __M_writer(u'\n\n')
         # SOURCE LINE 18
-        __M_writer(u'\n\n\n    <script>\n        function setupInputFields() {\n            //$(":text:not([value])").val(" ");\n            $(\'form\').find("input[type=text]").each(function(ev) {\n                if($(this).val()==\'\') { $(this).val(\' \'); }\n            });\n\n\n        }\n    </script>\n\n    <p class="description">\n        Follow the guid at SWAMID to retrive secret and key for the social service you which to configure.\n    </p>\n    <form action="')
-        # SOURCE LINE 35
+        __M_writer(u'\n\n\n    <script>\n        function setupInputFields() {\n            //$(":text:not([value])").val(" ");\n            $(\'form\').find("input[type=text]").each(function(ev) {\n                if($(this).val()==\'\') { $(this).val(\' \'); }\n            });\n\n\n        }\n    </script>\n\n    <p class="description">\n        Follow the guid at <a href="https://portal.nordu.net/display/SWAMID/Social2SAML">SWAMID</a> to retrive secret and key for the social service you which to configure.<br />\n        <br/>\n        Clear key and secret for a service if you wish to remove it from the IdPproxy.<br />\n        <br />\n        If a field contains ******************** it is already configured. Leave it if you do not wish to change it.\n    </p>\n    <form action="')
+        # SOURCE LINE 39
         __M_writer(unicode(action))
         __M_writer(u'" method="post">\n        ')
-        # SOURCE LINE 36
+        # SOURCE LINE 40
         __M_writer(unicode(setupServiceList(sociallist)))
         __M_writer(u'\n        <input type="hidden" id="sp" name="sp" value="')
-        # SOURCE LINE 37
+        # SOURCE LINE 41
         __M_writer(unicode(sp))
         __M_writer(u'" />\n        <input class="back" type="button" onclick="window.location.href = \'')
-        # SOURCE LINE 38
+        # SOURCE LINE 42
         __M_writer(unicode(back))
         __M_writer(u'\'" name="form.submitted" value="< Back"/>\n        <input class="submit" type="submit" onclick="setupInputFields();" name="form.submitted" value="Save changes >"/>\n    </form>\n')
         return ''

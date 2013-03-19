@@ -30,7 +30,7 @@
     </script>
 
     <p class="description">
-        Follow the guid at <a href="https://portal.nordu.net/display/SWAMID/Social2SAML">>SWAMID</a> to retrive secret and key for the social service you which to configure.<br> />
+        Follow the guid at <a href="https://portal.nordu.net/display/SWAMID/Social2SAML">SWAMID</a> to retrive secret and key for the social service you which to configure.<br />
         <br/>
         Clear key and secret for a service if you wish to remove it from the IdPproxy.<br />
         <br />
